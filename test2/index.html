@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Форма регистрации</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+	<form action="sever.php" method="POST">
+
+		<div class="container">
+			<div id = 123 class="alert alert-danger" role="alert" style="display: none;">
+  			<strong>!</strong> Пользователь с такой почтой уже зарегистрирован
+			</div>
+			   <div class="row justify-content-center">
+				<div class="form-group col-6	col-sm-5	col-md-5	col-lg-5	col-xl-4">
+					<label for="firstname">Имя</label>
+					<input type="text" name="firstname" class="form-control" id="firstname" required>
+					<small id="firstnameHelp" class="form-text text-muted">Введите Ваше имя</small>
+				</div>
+		<div class="container">
+		       <div class="row justify-content-center">
+				<div class="form-group col-6	col-sm-5	col-md-5	col-lg-5	col-xl-4">
+					<label for="surname">Фамилия</label>
+					<input type="text" name="surname" class="form-control" id="surname" required>
+					<small id="surnamelHelp" class="form-text text-muted">Введите Вашу фамилию</small>
+				</div>
+		<div class="container">
+		       <div class="row justify-content-center">
+				<div class="form-group col-6	col-sm-5	col-md-5	col-lg-5	col-xl-4">
+					<label for="email">Email</label>
+					<input type="email" name="email" class="form-control" id="email" required>
+					<small id="emailHelp" class="form-text text-muted">Введите ваш Email</small>
+			    </div>
+		<div class="container">
+		       <div class="row justify-content-center">
+				<div class="form-group col-6	col-sm-5	col-md-5	col-lg-5	col-xl-4">
+					<label for="Password">Пароль</label>
+					<input type="Password" name="Password" class="form-control" id="Password" required>
+					<small id="PasswordHelp" class="form-text text-muted">Придумайте пароль</small>
+				</div>
+		<div class="container">
+		       <div class="row justify-content-center">
+				<div class="form-group col-6	col-sm-5	col-md-5	col-lg-5	col-xl-4">
+					<label for="Password2">Повтор пароля</label>
+					<input type="Password" name="Password2" class="form-control" id="Password2" required>
+					<small id="Password2Help" class="form-text text-muted">Повторите пароль</small>
+
+					<p id="checkPass"></p>
+
+			    </div>
+			    		<div class="container">
+		       <div class="row justify-content-center">
+				 <button type="submit" class="btn btn-primary sm-4 mb-2 ">Зарегистрироваться</button>
+  				
+  				<!-- The Modal -->
+  		<div class="modal fade" id="myModal">
+    		<div class="modal-dialog">
+     		 <div class="modal-content">
+        <div class="modal-header">
+         	 <h4 class="modal-title">Внимание</h4>
+          	<button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        <div class="modal-body">
+          Отправка не удалась...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Закрыть</button>
+        </div>
+	</div>
+	</div>
+
+		</div>
+		
+	</form>
+	<!---<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>--->
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/password.js"></script>
+	<script type="text/javascript" src="js/send-form.js"></script>
+</body>
+</html>
